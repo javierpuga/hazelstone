@@ -11,15 +11,11 @@
   }
 
   
-#logo_container {
-    width:200px;
-    position:relative;
-}
-
-#logo_container img {
-    position:absolute;
-    top:50%; /* Move the image down, so its top is half way down the container */
-    margin-top:-100px; /* Move the image back up half its height */
+.logo {
+  display: flex; // make us of Flexbox
+  align-items: center; // does vertically center the desired content
+  justify-content: center; // horizontally centers single line items
+  text-align: center; // optional, but helps horizontally center text that breaks into multiple lines
 }
 
     
@@ -30,8 +26,8 @@
   
 <body>
   
- <div id="logo_container">
-    <img src="Logo_white.png" alt="image" />
+ <div id="logo">
+    <img src="Logo_white.png" />
  </div>
   
 </body>
